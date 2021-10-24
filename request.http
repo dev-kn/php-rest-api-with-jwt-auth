@@ -1,0 +1,72 @@
+POST  http://127.0.0.1:9900/api/auth/login HTTP/1.1
+content-type: application/json
+
+{
+    "username":"user1",
+    "password":"password1"
+}
+
+###
+GET  http://127.0.0.1:9900/api/post HTTP/1.1
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InVzZXIxIiwiaWF0IjoxNjM0OTk1MzI0LCJleHAiOjE2MzUwODE3MjR9.gXdUlVdHBD16nltIom9DznLW114YGx3fhK3LauNDpL4
+
+###
+
+GET  http://127.0.0.1:9900/api/post/3 HTTP/1.1
+
+###
+
+GET  http://127.0.0.1:9900/api/post/3 HTTP/1.1
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InVzZXIxIiwiaWF0IjoxNjM1MDA0MTE2LCJleHAiOjE2MzUwOTA1MTZ9.4vCITSb9gvu7-0E8zbeqoP8LqXFktCzb8F2Of4zvLf8
+
+###
+GET  http://127.0.0.1:9900/api/pot/3 HTTP/1.1
+
+###
+GET  http://127.0.0.1:9900/api/pot/3 HTTP/1.1
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InVzZXIxIiwiaWF0IjoxNjM1MDA0MTE2LCJleHAiOjE2MzUwOTA1MTZ9.4vCITSb9gvu7-0E8zbeqoP8LqXFktCzb8F2Of4zvLf8
+
+###
+GET  http://127.0.0.1:9900/api/get-posts-by-title/ms HTTP/1.1
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InVzZXIxIiwiaWF0IjoxNjM1MDA0MTE2LCJleHAiOjE2MzUwOTA1MTZ9.4vCITSb9gvu7-0E8zbeqoP8LqXFktCzb8F2Of4zvLf8
+
+###
+
+POST  http://127.0.0.1:9900/api/post HTTP/1.1
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InVzZXIxIiwiaWF0IjoxNjM1MDA0MTE2LCJleHAiOjE2MzUwOTA1MTZ9.4vCITSb9gvu7-0E8zbeqoP8LqXFktCzb8F2Of4zvLf8
+content-type: application/json
+
+{
+    "category":"cat 2",
+    "title":"sample title",
+    "body":"sample body",
+    "author":"sample author"
+}
+
+###
+PUT  http://127.0.0.1:9900/api/post/7 HTTP/1.1
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InVzZXIxIiwiaWF0IjoxNjM1MDA0MTE2LCJleHAiOjE2MzUwOTA1MTZ9.4vCITSb9gvu7-0E8zbeqoP8LqXFktCzb8F2Of4zvLf8
+content-type: application/json
+
+{
+    "id":"7",
+    "category":"cat 7",
+    "title":"sample title 7",
+    "body":"sample body 7",
+    "author":"sample author 7"
+}
+
+###
+DELETE  http://127.0.0.1:9900/api/post HTTP/1.1
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InVzZXIxIiwiaWF0IjoxNjM1MDA0MTE2LCJleHAiOjE2MzUwOTA1MTZ9.4vCITSb9gvu7-0E8zbeqoP8LqXFktCzb8F2Of4zvLf8
+content-type: application/json
+
+{
+    "id":"6",
+    "category":"cat 2",
+    "title":"sample title",
+    "body":"sample body",
+    "author":"sample author"
+}
+
+###
